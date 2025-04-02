@@ -23,7 +23,6 @@ import org.jetbrains.annotations.Nullable;
 
 public class ForgeBlock extends BlockWithEntity implements BlockEntityProvider {
 
-
     public static final MapCodec<ForgeBlock> CODEC = ForgeBlock.createCodec(ForgeBlock::new);
 
     public ForgeBlock(Settings settings) {
@@ -86,8 +85,6 @@ public class ForgeBlock extends BlockWithEntity implements BlockEntityProvider {
 
         return ItemActionResult.SUCCESS;
     }
-
-
 }
 
 

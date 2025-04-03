@@ -13,7 +13,7 @@ import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.world.World;
 
-public record GrowthChamberRecipe(Ingredient inputItem, ItemStack output) implements Recipe<GrowthChamberRecipeInput> {
+public record GrowthChamberRecipe(Ingredient inputItem, ItemStack output) implements Recipe<ForgeRecipeInput> {
     @Override
     public DefaultedList<Ingredient> getIngredients() {
         DefaultedList<Ingredient> list = DefaultedList.of();
@@ -24,7 +24,7 @@ public record GrowthChamberRecipe(Ingredient inputItem, ItemStack output) implem
     // read Recipe JSON files --> new GrowthChamberRecipe
 
     @Override
-    public boolean matches(GrowthChamberRecipeInput input, World world) {
+    public boolean matches(ForgeRecipeInput input, World world) {
         if(world.isClient()) {
             return false;
         }
@@ -33,7 +33,7 @@ public record GrowthChamberRecipe(Ingredient inputItem, ItemStack output) implem
     }
 
     @Override
-    public ItemStack craft(GrowthChamberRecipeInput input, RegistryWrapper.WrapperLookup lookup) {
+    public ItemStack craft(ForgeRecipeInput input, RegistryWrapper.WrapperLookup lookup) {
         return output.copy();
     }
 

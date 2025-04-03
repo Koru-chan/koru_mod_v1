@@ -9,13 +9,13 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-public class GrowthChamberScreen extends HandledScreen<GrowthChamberScreenHandler> {
+public class GrowthChamberScreen extends HandledScreen<ForgeScreenHandler> {
     private static final Identifier GUI_TEXTURE =
             Identifier.of(TutorialMod.MOD_ID, "textures/gui/growth_chamber/growth_chamber_gui.png");
     private static final Identifier ARROW_TEXTURE =
             Identifier.of(TutorialMod.MOD_ID, "textures/gui/arrow_progress.png");
 
-    public GrowthChamberScreen(GrowthChamberScreenHandler handler, PlayerInventory inventory, Text title) {
+    public GrowthChamberScreen(ForgeScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
     }
 

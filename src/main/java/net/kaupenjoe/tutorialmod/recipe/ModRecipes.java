@@ -19,6 +19,17 @@ public class ModRecipes {
                 }
             });
 
+    public static final RecipeSerializer<ForgeRecipe> FORGE_SERIALIZER = Registry.register(
+            Registries.RECIPE_SERIALIZER, Identifier.of(TutorialMod.MOD_ID, "forge"),
+            new ForgeRecipe.Serializer());
+    public static final RecipeType<ForgeRecipe> FORGE_TYPE = Registry.register(
+            Registries.RECIPE_TYPE, Identifier.of(TutorialMod.MOD_ID, "forge"), new RecipeType<ForgeRecipe>() {
+                @Override
+                public String toString() {
+                    return "forge";
+                }
+            });
+
     public static void registerRecipes() {
         TutorialMod.LOGGER.info("Registering Custom Recipes for " + TutorialMod.MOD_ID);
     }

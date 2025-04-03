@@ -3,17 +3,15 @@ package net.kaupenjoe.tutorialmod.block.entity.custom;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.kaupenjoe.tutorialmod.block.entity.ImplementedInventory;
 import net.kaupenjoe.tutorialmod.block.entity.ModBlockEntities;
-import net.kaupenjoe.tutorialmod.item.ModItems;
 import net.kaupenjoe.tutorialmod.recipe.GrowthChamberRecipe;
-import net.kaupenjoe.tutorialmod.recipe.GrowthChamberRecipeInput;
+import net.kaupenjoe.tutorialmod.recipe.ForgeRecipeInput;
 import net.kaupenjoe.tutorialmod.recipe.ModRecipes;
-import net.kaupenjoe.tutorialmod.screen.custom.GrowthChamberScreenHandler;
+import net.kaupenjoe.tutorialmod.screen.custom.ForgeScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.listener.ClientPlayPacketListener;
@@ -87,7 +85,7 @@ public class GrowthChamberBlockEntity extends BlockEntity implements ExtendedScr
     @Nullable
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return new GrowthChamberScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
+        return new ForgeScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
     }
 
     @Override
@@ -154,7 +152,7 @@ public class GrowthChamberBlockEntity extends BlockEntity implements ExtendedScr
 
     private Optional<RecipeEntry<GrowthChamberRecipe>> getCurrentRecipe() {
         return this.getWorld().getRecipeManager()
-                .getFirstMatch(ModRecipes.GROWTH_CHAMBER_TYPE, new GrowthChamberRecipeInput(inventory.get(INPUT_SLOT)), this.getWorld());
+                .getFirstMatch(ModRecipes.GROWTH_CHAMBER_TYPE, new ForgeRecipeInput(inventory.get(INPUT_SLOT)), this.getWorld());
     }
 
     private boolean canInsertItemIntoOutputSlot(ItemStack output) {

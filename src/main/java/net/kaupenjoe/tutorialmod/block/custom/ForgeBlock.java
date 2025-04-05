@@ -75,7 +75,7 @@ public class ForgeBlock extends BlockWithEntity implements BlockEntityProvider {
             return null;
         }
 
-        return validateTicker(type, ModBlockEntities.GROWTH_CHAMBER_BE,
+        return validateTicker(type, ModBlockEntities.FORGE_BE,
                 (world1, pos, state1, blockEntity) -> blockEntity.tick(world1, pos, state1));
     }
 }

@@ -30,7 +30,8 @@ public record ForgeRecipe(Ingredient inputItem1, Ingredient inputItem2, ItemStac
 
         // Controllo se uno o entrambi gli slot di input sono validi
         boolean firstMatches = inputItem1.test(input.getStackInSlot(0));
-        boolean secondMatches = inputItem2 == null || inputItem2.test(input.getStackInSlot(1));
+        boolean secondMatches = inputItem2.isEmpty() || inputItem2.test(input.getStackInSlot(1));
+
 
         return firstMatches && secondMatches;
     }

@@ -12,7 +12,7 @@ import net.kaupenjoe.tutorialmod.recipe.ModRecipes;
 import net.kaupenjoe.tutorialmod.screen.custom.GrowthChamberScreen;
 
 public class TutorialModREIClient implements REIClientPlugin {
-    @Override
+   /* @Override
     public void registerCategories(CategoryRegistry registry) {
         registry.add(new GrowthChamberCategory());
 
@@ -30,5 +30,5 @@ public class TutorialModREIClient implements REIClientPlugin {
         registry.registerClickArea(screen -> new Rectangle(((screen.width - 176) / 2) + 78,
                 ((screen.height - 166) / 2) + 30, 20, 25), GrowthChamberScreen.class,
                 GrowthChamberCategory.GROWTH_CHAMBER);
-    }
+    }*/
 }

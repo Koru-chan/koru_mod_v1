@@ -1,0 +1,6 @@
+{
+  "type": "tutorialmod:forge",
+  "ingredient1": { "item": "tutorialmod:raw_tin" },
+  "ingredient2": { "item": "minecraft:raw_copper" },
+  "result": { "item": "minecraft:bronze_ingot" }
+}

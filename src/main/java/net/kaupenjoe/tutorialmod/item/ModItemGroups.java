@@ -108,7 +108,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DRIFTWOOD_SAPLING);
 
                         entries.add(ModBlocks.CHAIR);
-                        entries.add(ModBlocks.GROWTH_CHAMBER);
+                        //entries.add(ModBlocks.GROWTH_CHAMBER);
 
 
                     }).build());

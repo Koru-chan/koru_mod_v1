@@ -3,6 +3,7 @@ package net.kaupenjoe.tutorialmod.screen.custom;
 import net.kaupenjoe.tutorialmod.block.entity.custom.ForgeBlockEntity;
 import net.kaupenjoe.tutorialmod.screen.FuelSlot;
 import net.kaupenjoe.tutorialmod.screen.ModScreenHandlers;
+import net.kaupenjoe.tutorialmod.screen.OutputSlot;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -11,7 +12,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
-import net.minecraft.screen.slot.CrafterOutputSlot;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.util.math.BlockPos;
 
@@ -34,7 +34,7 @@ public class ForgeScreenHandler extends ScreenHandler {
         this.addSlot(new Slot(inventory, 0, 45, 16));
         this.addSlot(new Slot(inventory, 1, 65, 16));
         this.addSlot(new FuelSlot(inventory, 2, 56, 53));
-        this.addSlot(new CrafterOutputSlot(inventory, 3, 115, 34));
+        this.addSlot(new OutputSlot(inventory, 3, 115, 34));
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);

@@ -1,0 +1,9 @@
+{
+  "type": "tutorialmod:forge",
+  "ingredient2": {
+    "item": "minecraft:raw_iron"
+  },
+  "result": {
+    "id": "minecraft:iron_ingot"
+  }
+}

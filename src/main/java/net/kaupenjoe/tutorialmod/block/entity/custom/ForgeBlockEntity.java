@@ -3,7 +3,7 @@ package net.kaupenjoe.tutorialmod.block.entity.custom;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.kaupenjoe.tutorialmod.block.entity.ImplementedInventory;
 import net.kaupenjoe.tutorialmod.block.entity.ModBlockEntities;
-import net.kaupenjoe.tutorialmod.recipe.GrowthChamberRecipe;
+import net.kaupenjoe.tutorialmod.recipe.ForgeRecipe;
 import net.kaupenjoe.tutorialmod.recipe.ForgeRecipeInput;
 import net.kaupenjoe.tutorialmod.recipe.ModRecipes;
 import net.kaupenjoe.tutorialmod.screen.custom.ForgeScreenHandler;
@@ -58,10 +58,15 @@ public class ForgeBlockEntity extends BlockEntity implements ExtendedScreenHandl
             @Override
             public void set(int index, int value) {
                 switch (index) {
-                    case 0: ForgeBlockEntity.this.progress = value;
-                    case 1: ForgeBlockEntity.this.maxProgress = value;
+                    case 0:
+                        ForgeBlockEntity.this.progress = value;
+                        break;
+                    case 1:
+                        ForgeBlockEntity.this.maxProgress = value;
+                        break;
                 }
             }
+
 
             @Override
             public int size() {
@@ -134,7 +139,9 @@ public class ForgeBlockEntity extends BlockEntity implements ExtendedScreenHandl
 
         // Rimuove 1 unità per ogni ingrediente
         this.removeStack(FIRST_INPUT_SLOT, 1);
-        this.removeStack(SECOND_INPUT_SLOT, 1);
+        if (!recipe.get().value().inputItem2().isEmpty()) {
+            this.removeStack(SECOND_INPUT_SLOT, 1);
+        }
         this.removeStack(FUEL_SLOT, 1);
 
         // Aggiunge il risultato alla fornace
@@ -166,13 +173,15 @@ public class ForgeBlockEntity extends BlockEntity implements ExtendedScreenHandl
 
 
     private Optional<RecipeEntry<ForgeRecipe>> getCurrentRecipe() {
+        ItemStack input1 = inventory.get(FIRST_INPUT_SLOT);
+        ItemStack input2 = inventory.get(SECOND_INPUT_SLOT);
+
         return this.getWorld().getRecipeManager()
                 .getFirstMatch(ModRecipes.FORGE_TYPE,
-                        new ForgeRecipeInput(
-                                inventory.get(FIRST_INPUT_SLOT),
-                                inventory.get(SECOND_INPUT_SLOT)),
+                        new ForgeRecipeInput(input1, input2),
                         this.getWorld());
     }
+
 
 
     private boolean canInsertItemIntoOutputSlot(ItemStack output) {

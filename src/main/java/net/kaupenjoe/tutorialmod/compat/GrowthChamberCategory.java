@@ -1,4 +1,4 @@
-package net.kaupenjoe.tutorialmod.compat;
+/*package net.kaupenjoe.tutorialmod.compat;
 
 import me.shedaniel.math.Point;
 import me.shedaniel.math.Rectangle;
@@ -60,3 +60,4 @@ public class GrowthChamberCategory implements DisplayCategory<BasicDisplay> {
         return 90;
     }
 }
+*/

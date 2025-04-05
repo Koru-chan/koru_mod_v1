@@ -105,8 +105,6 @@ public class ModBlocks {
     public static final Block CHAIR = registerBlock("chair",
             new ChairBlock(AbstractBlock.Settings.create().nonOpaque()));
 
-    public static final Block GROWTH_CHAMBER = registerBlock("growth_chamber",
-            new GrowthChamberBlock(AbstractBlock.Settings.create()));
 
     public static final Block FORGE = registerBlock("forge",
             new ForgeBlock(AbstractBlock.Settings.create()));

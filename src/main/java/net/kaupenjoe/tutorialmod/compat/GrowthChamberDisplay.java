@@ -1,4 +1,4 @@
-package net.kaupenjoe.tutorialmod.compat;
+/*package net.kaupenjoe.tutorialmod.compat;
 
 import me.shedaniel.rei.api.common.category.CategoryIdentifier;
 import me.shedaniel.rei.api.common.display.basic.BasicDisplay;
@@ -21,3 +21,4 @@ public class GrowthChamberDisplay extends BasicDisplay {
         return GrowthChamberCategory.GROWTH_CHAMBER;
     }
 }
+*/

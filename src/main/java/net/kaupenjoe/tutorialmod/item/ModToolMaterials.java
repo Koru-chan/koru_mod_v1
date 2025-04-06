@@ -3,6 +3,7 @@ package net.kaupenjoe.tutorialmod.item;
 import com.google.common.base.Suppliers;
 import net.kaupenjoe.tutorialmod.util.ModTags;
 import net.minecraft.block.Block;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.TagKey;
@@ -11,7 +12,17 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
     PINK_GARNET(ModTags.Blocks.INCORRECT_FOR_PINK_GARNET_TOOL,
-            1200, 5.0F, 4.0F, 22, () -> Ingredient.ofItems(ModItems.PINK_GARNET));
+            1200, 5.0F, 4.0F, 22, () -> Ingredient.ofItems(ModItems.PINK_GARNET)),
+
+    COPPER(ModTags.Blocks.INCORRECT_FOR_COPPER_TOOL,
+            160, 5.0F, 1.0F, 10, () -> Ingredient.ofItems(Items.COPPER_INGOT)),
+
+    TIN(ModTags.Blocks.INCORRECT_FOR_TIN_TOOL,
+            60, 5.0F, 1.0F, 8, () -> Ingredient.ofItems(ModItems.TIN_INGOT)),
+
+    BRONZE(ModTags.Blocks.INCORRECT_FOR_BRONZE_TOOL,
+            200, 5.5F, 1.5F, 12, () -> Ingredient.ofItems(ModItems.BRONZE_INGOT));
+
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

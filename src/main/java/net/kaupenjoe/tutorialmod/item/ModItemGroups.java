@@ -25,6 +25,25 @@ public class ModItemGroups {
                         entries.add(ModBlocks.TIN_ORE);
                         entries.add(ModBlocks.DEEPSLATE_TIN_ORE);
 
+                        //Tool
+                        entries.add(ModItems.COPPER_SWORD);
+                        entries.add(ModItems.COPPER_PICKAXE);
+                        entries.add(ModItems.COPPER_SHOVEL);
+                        entries.add(ModItems.COPPER_AXE);
+                        entries.add(ModItems.COPPER_HOE);
+
+                        entries.add(ModItems.BRONZE_SWORD);
+                        entries.add(ModItems.BRONZE_PICKAXE);
+                        entries.add(ModItems.BRONZE_SHOVEL);
+                        entries.add(ModItems.BRONZE_AXE);
+                        entries.add(ModItems.BRONZE_HOE);
+
+                        entries.add(ModItems.TIN_SWORD);
+                        entries.add(ModItems.TIN_PICKAXE);
+                        entries.add(ModItems.TIN_SHOVEL);
+                        entries.add(ModItems.TIN_AXE);
+                        entries.add(ModItems.TIN_HOE);
+
                     }).build());
 
     public static final ItemGroup PINK_GARNET_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,

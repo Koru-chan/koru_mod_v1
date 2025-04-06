@@ -1,12 +1,12 @@
-// 1.21.1	2025-03-31T15:20:28.2411193	Tutorial Mod/Tags for minecraft:item
-840726859672b531edb33e064e2e0943de7fc82d data\minecraft\tags\item\pickaxes.json
+// 1.21.1	2025-04-06T08:12:27.454638	Tutorial Mod/Tags for minecraft:item
+d8d753ee0fba57f2f285b5a3f92f72580086cd5a data\minecraft\tags\item\pickaxes.json
 3785ccf2250da2396658a0921bd6f81beb1f7be9 data\minecraft\tags\item\trim_templates.json
 2aea14bcf6e0112aa2f69d63beab9d27793a3eb3 data\minecraft\tags\item\logs_that_burn.json
-1bed5c04d69e56793214c4992714ddd588fcc06c data\tutorialmod\tags\item\transformable_items.json
+af78464dec5cb00749677d97e48347ca38cfe558 data\tutorialmod\tags\item\transformable_items.json
 1a39dedd310f06bf1a624b4363f683ebe3b2905b data\minecraft\tags\item\trimmable_armor.json
 6ba665925c3e1e7b5501fa38ab3095b1987c0886 data\minecraft\tags\item\trim_materials.json
-8f653a3350d8f1fbd15d245e7de66379a30930e2 data\minecraft\tags\item\swords.json
-a83d7a926074b69c0b715a6d7e603b0fc4c78d11 data\minecraft\tags\item\hoes.json
+a20c6ad71d460c389b6d82d77f7d90b7c2580153 data\minecraft\tags\item\swords.json
 9359d13780a2f1f165db692a2df57266b1806e2a data\minecraft\tags\item\planks.json
-351330e211b4558f91f0550566fbac71f5a3b2e5 data\minecraft\tags\item\shovels.json
-8ced195f504be266fa1818b0cfbd2ee244987195 data\minecraft\tags\item\axes.json
+32563b46886b1112bcdeb8ff01faf87ac922debd data\minecraft\tags\item\hoes.json
+a27aef3f7f69f6f991aa88f77ef5400ed787136d data\minecraft\tags\item\shovels.json
+0fa8f8627a9e24ba74b87449d60a21b424d9790f data\minecraft\tags\item\axes.json

@@ -23,7 +23,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.TIN_INGOT)
                 .add(ModItems.RAW_TIN)
                 .add(ModItems.BRONZE_INGOT)
-
+                .add(Items.RAW_COPPER)
                 .add(ModItems.PINK_GARNET)
                 .add(ModItems.RAW_PINK_GARNET)
                 .add(Items.COAL)
@@ -31,15 +31,30 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.APPLE);
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
-                .add(ModItems.PINK_GARNET_SWORD);
+                .add(ModItems.PINK_GARNET_SWORD)
+                .add(ModItems.COPPER_SWORD)
+                .add(ModItems.TIN_SWORD)
+                .add(ModItems.BRONZE_SWORD);
         getOrCreateTagBuilder(ItemTags.PICKAXES)
-                .add(ModItems.PINK_GARNET_PICKAXE);
+                .add(ModItems.PINK_GARNET_PICKAXE)
+                .add(ModItems.COPPER_PICKAXE)
+                .add(ModItems.TIN_PICKAXE)
+                .add(ModItems.BRONZE_PICKAXE);
         getOrCreateTagBuilder(ItemTags.SHOVELS)
-                .add(ModItems.PINK_GARNET_SHOVEL);
+                .add(ModItems.PINK_GARNET_SHOVEL)
+                .add(ModItems.COPPER_SHOVEL)
+                .add(ModItems.TIN_SHOVEL)
+                .add(ModItems.BRONZE_SHOVEL);
         getOrCreateTagBuilder(ItemTags.AXES)
-                .add(ModItems.PINK_GARNET_AXE);
+                .add(ModItems.PINK_GARNET_AXE)
+                .add(ModItems.COPPER_AXE)
+                .add(ModItems.TIN_AXE)
+                .add(ModItems.BRONZE_AXE);
         getOrCreateTagBuilder(ItemTags.HOES)
-                .add(ModItems.PINK_GARNET_HOE);
+                .add(ModItems.PINK_GARNET_HOE)
+                .add(ModItems.COPPER_HOE)
+                .add(ModItems.TIN_HOE)
+                .add(ModItems.BRONZE_HOE);
 
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.PINK_GARNET_HELMET)

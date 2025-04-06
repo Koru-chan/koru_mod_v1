@@ -10,6 +10,17 @@
 
   "itemgroup.tutorialmod.koru_mod_tab": "Koru Mod",
 
+  "item.tutorialmod.copper_sword": "Copper Sword",
+  "item.tutorialmod.copper_pickaxe": "Copper Pickaxe",
+  "item.tutorialmod.copper_shovel": "Copper Shovel",
+  "item.tutorialmod.copper_axe": "Copper Axe",
+  "item.tutorialmod.copper_hoe": "Copper Hoe",
+
+  "item.tutorialmod.bronze_sword": "Bronze Sword",
+  "item.tutorialmod.bronze_pickaxe": "Bronze Pickaxe",
+  "item.tutorialmod.bronze_shovel": "Bronze Shovel",
+  "item.tutorialmod.bronze_axe": "Bronze Axe",
+  "item.tutorialmod.bronze_hoe": "Bronze Hoe",
 
   "item.tutorialmod.pink_garnet": "Pink Garnet",
   "item.tutorialmod.raw_pink_garnet": "Raw Pink Garnet",

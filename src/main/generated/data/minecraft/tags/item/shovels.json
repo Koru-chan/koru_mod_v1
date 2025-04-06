@@ -1,5 +1,8 @@
 {
   "values": [
-    "tutorialmod:pink_garnet_shovel"
+    "tutorialmod:pink_garnet_shovel",
+    "tutorialmod:copper_shovel",
+    "tutorialmod:tin_shovel",
+    "tutorialmod:bronze_shovel"
   ]
 }

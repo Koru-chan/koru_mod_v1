@@ -1,5 +1,8 @@
 {
   "values": [
-    "tutorialmod:pink_garnet_pickaxe"
+    "tutorialmod:pink_garnet_pickaxe",
+    "tutorialmod:copper_pickaxe",
+    "tutorialmod:tin_pickaxe",
+    "tutorialmod:bronze_pickaxe"
   ]
 }
